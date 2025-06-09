@@ -154,7 +154,7 @@ class CorpusCog(commands.Cog):
 @bot.event
 async def on_message(message):
     if message.author.bot:
-        return  # Evita bucles si el bot se responde a sí mismo
+        return  # Evitar bucles si el bot se responde a sí mismo
 
     if message.channel.name == "🈸｜corpus-paralelo":
         try:
